@@ -1,5 +1,7 @@
 # 👋 Hello, I'm Narrativ Forge
 
+<p align="center"><img src="https://raw.githubusercontent.com/narrativforge/narrativforge/main/assets/narrativ-forge-banner.svg" alt="Narrativ Forge — AI-Powered Creative Studio" width="100%" /></p>
+
 <p align="center">
   <img src="https://img.shields.io/badge/AI-Creative%20Technology-7C3AED?style=for-the-badge" alt="AI Creative Technology" />
   <img src="https://img.shields.io/badge/Focus-Storytelling%20%7C%20Multimedia-0EA5E9?style=for-the-badge" alt="Storytelling and Multimedia" />
