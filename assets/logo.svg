@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#4F1D96" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <!-- Glow -->
+  <circle cx="100" cy="100" r="90" fill="url(#glow)" filter="url(#blur)"/>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#0EA5E9" stroke-width="2" opacity="0.6"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.4"/>
+  <!-- Main circle -->
+  <circle cx="100" cy="100" r="82" fill="url(#bg)"/>
+  <!-- Inner accent ring -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#0EA5E9" stroke-width="1.5" opacity="0.3"/>
+  <!-- Initials -->
+  <text x="100" y="115" font-family="'Segoe UI', Arial, sans-serif" font-size="42"
+        font-weight="800" fill="white" text-anchor="middle" letter-spacing="2"
+        style="text-shadow: 0 0 20px #A78BFA">NF</text>
+  <!-- Bottom accent line -->
+  <line x1="70" y1="130" x2="130" y2="130" stroke="#0EA5E9" stroke-width="1.5" opacity="0.5"/>
+</svg>
