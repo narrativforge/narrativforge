@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050810"/>
+      <stop offset="40%" stop-color="#4F1D96" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </linearGradient>
+    <!-- Logo glow -->
+    <radialGradient id="lglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Right glow -->
+    <radialGradient id="rglow" cx="80%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="gblur"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="sblur"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1500" height="500" fill="url(#bg)"/>
+  <rect width="1500" height="500" fill="url(#rglow)"/>
+
+  <!-- Star field (subtle dots) -->
+  <g opacity="0.4" fill="white">
+    <circle cx="200" cy="80" r="1"/><circle cx="400" cy="40" r="1.5"/>
+    <circle cx="650" cy="90" r="1"/><circle cx="900" cy="30" r="1.5"/>
+    <circle cx="1100" cy="70" r="1"/><circle cx="1300" cy="50" r="1.5"/>
+    <circle cx="1400" cy="110" r="1"/><circle cx="750" cy="470" r="1.5"/>
+    <circle cx="300" cy="420" r="1"/><circle cx="1200" cy="430" r="1"/>
+    <circle cx="100" cy="300" r="1.5"/><circle cx="1450" cy="280" r="1"/>
+    <circle cx="500" cy="460" r="1"/><circle cx="850" cy="20" r="1"/>
+  </g>
+
+  <!-- Left glow blob for logo -->
+  <ellipse cx="230" cy="250" rx="180" ry="180" fill="url(#lglow)" filter="url(#gblur)"/>
+
+  <!-- Logo circle -->
+  <circle cx="230" cy="250" r="150" fill="#050810" opacity="0.7"/>
+  <circle cx="230" cy="250" r="148" fill="none" stroke="#0EA5E9" stroke-width="2" opacity="0.5"/>
+  <circle cx="230" cy="250" r="130" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.3"/>
+  <!-- Logo gradient fill -->
+  <defs>
+    <radialGradient id="lgfill" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#4F1D96" stop-opacity="0.95"/>
+    </radialGradient>
+  </defs>
+  <circle cx="230" cy="250" r="128" fill="url(#lgfill)"/>
+  <!-- Initials -->
+  <text x="230" y="275" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="72" font-weight="900" fill="white"
+        text-anchor="middle" letter-spacing="4">NF</text>
+  <line x1="175" y1="300" x2="285" y2="300" stroke="#0EA5E9" stroke-width="2" opacity="0.6"/>
+
+  <!-- Vertical divider -->
+  <line x1="430" y1="80" x2="430" y2="420" stroke="#0EA5E9" stroke-width="1" opacity="0.25"/>
+
+  <!-- Project Name -->
+  <text x="490" y="200" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="80" font-weight="900" fill="white" letter-spacing="2">NARRATIV FORGE</text>
+  <!-- Accent underline -->
+  <rect x="490" y="220" width="500" height="3" rx="2" fill="#7C3AED" opacity="0.8"/>
+  <rect x="490" y="220" width="150" height="3" rx="2" fill="#0EA5E9"/>
+
+  <!-- Tagline -->
+  <text x="490" y="290" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="36" font-weight="400" fill="#0EA5E9" letter-spacing="1" opacity="0.95">AI-Powered Multimedia Studio</text>
+
+  <!-- Sub tags -->
+  <text x="490" y="345" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="22" font-weight="300" fill="white" opacity="0.45">Story · Audio · Video · Production</text>
+
+  <!-- Bottom accent line full width -->
+  <rect x="0" y="490" width="1500" height="4" rx="0" fill="#7C3AED" opacity="0.6"/>
+  <rect x="0" y="490" width="300" height="4" fill="#0EA5E9" opacity="0.9"/>
+
+  <!-- Right side: decorative rings -->
+  <circle cx="1300" cy="250" r="120" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.15"/>
+  <circle cx="1300" cy="250" r="80" fill="none" stroke="#0EA5E9" stroke-width="1" opacity="0.1"/>
+  <circle cx="1300" cy="250" r="40" fill="#7C3AED" opacity="0.08"/>
+  <circle cx="1300" cy="250" r="12" fill="#7C3AED" opacity="0.3"/>
+</svg>
